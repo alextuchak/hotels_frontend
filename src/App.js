@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from './components/footer/footer';
+import Parallax from './components/body/parallax';
+import Navbar from "./components/header/navbar";
+import Section from "./components/body/section"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar></Navbar>
+      <Parallax image_name="first"></Parallax>
+      <Section> </Section>
+      <Parallax image_name="second"></Parallax>
+      <Footer></Footer>
     </div>
   );
 }
